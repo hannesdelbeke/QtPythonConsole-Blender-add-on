@@ -5,6 +5,24 @@ a Blender add-on wrapper for [QtPythonConsole](https://github.com/Ahuge/QtPython
 This wrapper exposes the console as an addon. You can start it from the menu: `window/qt console` There's a dependency on Qt (I used PySide2 for testing)
 ![image](https://user-images.githubusercontent.com/3758308/226137899-a5748c1a-4325-4585-9264-46ec54d76b62.png)
 
+## installation
+### Plugget installation
+- install plugget
+- run this code in the blender script editor:
+```python
+import plugget.commands
+plugget.commands.install("QtPythonConsole")
+```
+
+### Manual installation
+- copy the python file to your addons folder.
+- install QtPythonConsole 
+  - download all files from repo
+  - put them in a folder named `QtPythonConsole`
+  - copy the folder to your Blender addons/modules folder
+- pip install a qt python module to your blender modules folder e.g. PySide2
+
+
 
 ## Support
 - Bugs & feature requests for the original console go here: [QtPythonConsole issues](https://github.com/Ahuge/QtPythonConsole/issues) (likely unsupported)
