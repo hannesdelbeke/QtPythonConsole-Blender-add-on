@@ -27,7 +27,7 @@ plugget.commands.install("QtPythonConsole")
 --- download all files from repo<br>
 --- put them in a folder named `QtPythonConsole`<br>
 --- copy the folder to your Blender addons/modules folder<br>
-• pip install a qt python module to your blender modules folder e.g. PySide2
+• pip install a qt python module to your blender modules folder e.g. PySide2 or PyQt5
 </details>
 
 
