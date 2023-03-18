@@ -1,5 +1,6 @@
 # QtPythonConsole-Blender-add-on
 a Blender add-on wrapper for [QtPythonConsole](https://github.com/Ahuge/QtPythonConsole)
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/3758308/226135266-3f390cc6-64d7-4bf1-8ed4-61e85cedfd84.png">
 
 ## Purpose
 Mainly to test several types of dependencies:
