@@ -1,1 +1,2 @@
+PySide2
 git+https://github.com/Ahuge/QtPythonConsole
