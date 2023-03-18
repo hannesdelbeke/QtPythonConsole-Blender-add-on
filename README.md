@@ -6,22 +6,29 @@ This wrapper exposes the console as an addon. You can start it from the menu: `w
 ![image](https://user-images.githubusercontent.com/3758308/226137899-a5748c1a-4325-4585-9264-46ec54d76b62.png)
 
 ## installation
-### Plugget installation
-- install plugget
-- run this code in the blender script editor:
+
+<details>
+<summary>Plugget installation</summary>
+<br>
+<pre> • <pre> install plugget<br>
+<pre> • <pre> run this code in the blender script editor:<br>
+  
 ```python
 import plugget.commands
 plugget.commands.install("QtPythonConsole")
 ```
+</details>
 
-### Manual installation
-- copy the python file to your addons folder.
-- install QtPythonConsole 
-  - download all files from repo
-  - put them in a folder named `QtPythonConsole`
-  - copy the folder to your Blender addons/modules folder
-- pip install a qt python module to your blender modules folder e.g. PySide2
-
+<details>
+<summary>Manual installation</summary>
+<br>
+• copy the python file to your addons folder.<br>
+• install QtPythonConsole <br>
+--- download all files from repo<br>
+--- put them in a folder named `QtPythonConsole`<br>
+--- copy the folder to your Blender addons/modules folder<br>
+• pip install a qt python module to your blender modules folder e.g. PySide2
+</details>
 
 
 ## Support
