@@ -23,26 +23,24 @@ class QtConsolePreferences(bpy.types.AddonPreferences):
 class OpenConsoleOperator(bpy.types.Operator):
     bl_idname = "wm.open_qt_console"
     bl_label = "Python Editor & Console"
-    console_reference = None
+    console_widget = None
 
     def execute(self, context):
-        import QtPythonConsole.console as c
+        import QtPythonConsole.console
         from QtPythonConsole.Qt import QtCore, QtWidgets
-
-        d = c.ConsoleDialog()
-        d = c.ConsoleDialog(QtCore.Qt.Tool)
-        # parent to bqt if available
+        
         app = QtWidgets.QApplication.instance()
-        bqt_setup = hasattr(app, 'blender_widget')
-        if bqt_setup:
-            d.setParent(app.blender_widget, QtCore.Qt.Window)
-        d.show()
-
-        # if not bqt_setup:
-        #     app.exec_()
-
-        global console_reference
-        console_reference = d
+        if not app:
+            app = QtWidgets.QApplication()
+        
+        args = []
+        # parent to bqt if available to keep widget in front
+        if hasattr(app, 'blender_widget'):
+            args = [app.blender_widget]
+        args.append[QtCore.Qt.Tool]
+            
+        self.console_widget = QtPythonConsole.console.ConsoleDialog(*args)            
+        self.console_widget.show()
 
         return {'FINISHED'}
 
