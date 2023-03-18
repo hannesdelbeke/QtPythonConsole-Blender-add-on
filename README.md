@@ -10,8 +10,8 @@ This wrapper exposes the console as an addon. You can start it from the menu: `w
 <details>
 <summary>Plugget installation</summary>
 <br>
-<pre> • <pre> install plugget<br>
-<pre> • <pre> run this code in the blender script editor:<br>
+• install plugget<br>
+• run this code in the blender script editor:<br>
   
 ```python
 import plugget.commands
