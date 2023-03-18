@@ -5,7 +5,7 @@ a Blender add-on wrapper for [QtPythonConsole](https://github.com/Ahuge/QtPython
 This wrapper exposes the console as an addon. You can start it from the menu: `window/qt console` There's a dependency on Qt (I used PySide2 for testing)
 ![image](https://user-images.githubusercontent.com/3758308/226137899-a5748c1a-4325-4585-9264-46ec54d76b62.png)
 
-## installation
+## Installation
 
 <details>
 <summary>Plugget installation</summary>
